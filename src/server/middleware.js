@@ -21,10 +21,6 @@ export default (server) => {
     const dist_directory = join(this_directory, "../../public/dist").slice(5)
     server.use(server_static_directory(dist_directory))
 
-    // Statically serves the media directory (contains images, videos, etc)
-    const media_directory = join(this_directory, "../../public/media").slice(5)
-    server.use(server_static_directory(media_directory))
-
     // Applies a rate limiting of 100 requests per 1 minute window
     server.use(express_rate_limit({
         windowMs: 1 * 60 * 1000,
