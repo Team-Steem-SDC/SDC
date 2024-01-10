@@ -1,5 +1,5 @@
 {
-  "name": "pern-template",
+  "name": "team-steem-sdc",
   "version": "1.0.0",
   "type": "module",
   "private": true,
@@ -13,33 +13,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cantwellsean0127/pern-template.git"
+    "url": "git+https://github.com/Team-Steem-SDC/SDC.git"
   },
   "keywords": [
-    "pern",
-    "postgres",
-    "postgresql",
-    "express",
-    "expressjs",
-    "express.js",
-    "react",
-    "reactjs",
-    "react.js",
-    "node",
-    "nodejs",
-    "node.js",
-    "project",
-    "boilerplate",
-    "template",
-    "creator",
-    "generator"
+    "mcspa-2310",
+    "team-steem",
+    "sdc"
   ],
-  "author": "Sean Cantwell",
+  "author": "Team Steem",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cantwellsean0127/pern-template/issues"
+    "url": "https://github.com/Team-Steem-SDC/SDC/issues"
   },
-  "homepage": "https://github.com/cantwellsean0127/pern-template#readme",
+  "homepage": "https://github.com/Team-Steem-SDC/SDC#readme",
   "dependencies": {
     "chalk": "^5.3.0",
     "dotenv": "^16.3.1",
