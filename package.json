@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
-  "description": "",
+  "description": "MCSPA-2310 SDC for Team Steem",
   "main": "./src/main.js",
   "scripts": {
-    "build": "vite build --emptyOutDir",
+    "build-vite": "vite build --emptyOutDir",
+    "build-electron": "electron-builder -c.mac.identity=null",
     "server": "node ./src/main.js",
-    "start": "npm run build && npm run server",
+    "electron": "npm run build-vite && electron ./src/electron/electron.js",
+    "start": "npm run build-vite && npm run server",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "build": {
+    "directories": {
+      "output": "./src/electron/dist/"
+    },
+    "icon": "./public/media/images/favicon.png"
   },
   "repository": {
     "type": "git",
@@ -39,10 +47,13 @@
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^28.1.2",
+    "electron-builder": "^24.9.1",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-singlefile": "^0.13.5"
   }
 }
