@@ -11,8 +11,8 @@ import { env } from "process"
 const start = () => {
 
     // Listens for incoming connections
-    server.listen(env.server_port, () => {
-        console.log(chalk.bold.green(`Server running on port ${env.server_port}`))
+    server.listen(env.VITE_server_port, () => {
+        console.log(chalk.bold.green(`Server running on port ${env.VITE_server_port}`))
     })
 
 }

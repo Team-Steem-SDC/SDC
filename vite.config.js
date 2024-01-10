@@ -7,5 +7,6 @@ export default defineConfig({
   root: "./src/react",
   build: {
     outDir: "../../public/dist"
-  }
+  },
+  envDir: '../../',
 })
